@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.hero{
+   width: auto;
+   height: 100vh;
+   background-size: 100%;
+   color: white;
+}
+
+.header{
+    padding-bottom: 100px;
+    height: 170vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),
+    rgba(0,0,0,0.75)), url(imgs/Valkyricons.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 90%;
+    background-size: cover;
+}
+
+
+.topnavbar{
+    width: 100%;
+    display: flex;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    float: right;
+    align-items: center;
+    background-color: rgba(19, 26, 39, 0.596);
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 20px 30px rgba(3, 3, 3, 0.418);
+    z-index: 10;
+    
+    gap: 50px;
+}
+
+.navlinks{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    gap: 10vh;
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.topnavbar a{
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.topnavbar a.active{
+    background-color: rgba(0, 255, 255, 0.578);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.topnavbar a:hover{
+    background-color: rgba(0, 255, 255, 0.116);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.logo{
+    width: auto;
+    height: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    display: flex;
+    flex-flow: row;
+    text-align: start;
+    place-self: baseline;
+    box-sizing: content-box;
+}
+
+.hero{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: relative;
+    flex-direction: column;
+    padding-top: 390px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.container{
+    width: auto;
+    padding: 0;
+    display: block;
+    flex-direction: row;
+    float: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.801),
+    rgba(0, 0, 0, 0.733)), url(imgs/background\ image.jpg);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 100px;
+    border: 3px solid wheat;
+}
+
+.trailer .trailer-link{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+}
+
+.trailer-link h2{
+    position: relative;
+    width: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: antiquewhite;
+    font-size: 30px;
+    padding-left: 5%;
+    flex-direction: column-reverse;
+}
+
+.container2{
+    width: auto;
+    padding: 0;
+    display: block;
+    flex-direction: row;
+    float: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.801),
+    rgba(0, 0, 0, 0.733)), url(imgs/background\ image.jpg);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    border: 3px solid wheat;
+}
+
+.opening .opening-link{
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    width: 90%;
+    height: 100%;
+}
+
+.opening-link h2{
+    position: relative;
+    width: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: antiquewhite;
+    font-size: 30px;
+    padding-right: 5%;
+    flex-direction: column-reverse;
+}
+
+.container3{
+    width: auto;
+    padding: 0;
+    display: block;
+    flex-direction: row;
+    float: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.801),
+    rgba(0, 0, 0, 0.733)), url(imgs/background\ image.jpg);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    border: 3px solid wheat;
+}
+
+.ending .ending-link{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+}
+
+.ending-link h2{
+    position: relative;
+    width: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: antiquewhite;
+    font-size: 30px;
+    padding-left: 5%;
+    flex-direction: column-reverse;
+}
+
+
+
