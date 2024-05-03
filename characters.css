@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner{
+    width: 100%;
+    height: auto;
+    background-color: rgba(11, 24, 36, 0.87);
+    background-size: cover;
+    position: relative;
+    animation: transitionIn 0.75s;
+    user-select: none;
+}
+
+
+.topnavbar{
+    width: 100%;
+    display: flex;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    float: right;
+    align-items: center;
+    background-color: rgba(19, 26, 39, 0.596);
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 20px 30px rgba(3, 3, 3, 0.418);
+    z-index: 10;
+    
+    gap: 50px;
+}
+
+.logo{
+    width: auto;
+    height: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    display: flex;
+    flex-flow: row;
+    text-align: start;
+    place-self: baseline;
+    box-sizing: content-box;
+}
+
+.navlinks{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    gap: 10vh;
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.topnavbar a{
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.topnavbar a.active{
+    background-color: rgba(0, 255, 255, 0.578);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.topnavbar a:hover{
+    background-color: rgba(0, 255, 255, 0.116);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.charactersBody{
+    height: 100;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: antiquewhite;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+}
+
+.containerChar{
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 3px;
+    align-items: center;
+}
+
+
+.charCard {
+    position: relative;
+    width: 300px;
+    height: 560px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: baseline;
+    margin: 150px;
+    margin-top: 50px;
+    margin-bottom: 0;
+    margin-right: 50px;
+    background: transparent;
+    transition: 0.5s;
+}
+
+
+/*img*/
+.charCard .imgBox{
+    position: absolute;
+    gap: 360px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.charCard .imgBox img{
+    position: relative;
+    max-width: 500px;
+    height: 350px;
+    transition: 0.5s;
+    border-radius: 250px;
+    border-bottom: solid 5px red;
+    box-shadow: 0 20px 30px rgba(3, 3, 3, 0.418);
+    backdrop-filter: blur(3px);
+    
+    transition: 0.5s;
+}
+
+.charCard:hover .imgBox img{
+    transform: translateX(-30px);
+}
+
+
+
+/*desc*/
+.charCard .desc{
+    position: relative;
+    padding: 50px;
+    background-color: rgba(88, 27, 16, 0.74);
+    border-radius: 55px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.charCard .desc h2{
+    font-size: 45px;
+    font-family:'Times New Roman', Times, serif;
+    font-style:oblique;
+}
+
+.charCard .desc h3{
+    font-size: 20px;
+}
+
+.charCard .desc p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.charCard:hover .desc{
+    opacity: 1;
+    transform: translateX(250px);
+}
